@@ -617,7 +617,14 @@ img {
   color: var(--accent-cl);
 }
 
-.foot-social-deck {
+/* foot social content */
+
+.foot-social-content {
+  margin-right: 93px;
+}
+
+.foot-social-deck,
+.foot-form-deck {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -661,6 +668,14 @@ img {
 .foot-social-icon {
   fill: currentColor;
 }
+/* /foot social content */
+
+/* foot form content */
+
+.foot-mail-form {
+  display: inline-flex;
+}
+/* /foot-form */
 
 /* ====== /Footer ====== */
 
