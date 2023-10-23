@@ -675,7 +675,62 @@ img {
 .foot-mail-form {
   display: inline-flex;
 }
-/* /foot-form */
+
+.foot-mail-input {
+  display: inline-flex;
+  margin-right: 10px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--main-bg-cl);
+
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+}
+
+.foot-form-btn {
+  display: inline-flex;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+
+  transition: background-color var(--duration) var(--timing-function);
+}
+
+.foot-form-btn:hover,
+.foot-form-btn:focus {
+  background-color: #188ce8;
+}
+
+.foot-form-btn::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  outline: 2px solid tomato;
+}
+
+/* /foot form content */
 
 /* ====== /Footer ====== */
 
