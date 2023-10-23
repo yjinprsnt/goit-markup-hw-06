@@ -316,7 +316,10 @@ img {
 
   min-width: 528px;
   min-height: 581px;
-  padding: 8px;
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   border-radius: 4px;
 
   background-color: var(--main-bg-cl);
@@ -327,18 +330,28 @@ img {
 }
 
 .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin-left: auto;
-
   width: 30px;
   height: 30px;
 
-  background-color: var(--main-bg-cl);
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.modal-title {
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondary-txt-cl);
 }
 /* = /Modal Window = */
 /* ====== /Hero section ====== */
@@ -691,7 +704,6 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  text-align: left;
   color: rgba(255, 255, 255, 0.6);
 
   width: 358px;
