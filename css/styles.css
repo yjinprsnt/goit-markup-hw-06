@@ -352,7 +352,108 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-txt-cl);
+
+  margin-bottom: 12px;
 }
+
+.modal-form-group {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--main-txt-cl);
+
+  margin-bottom: 4px;
+}
+
+.modal-form-input {
+  display: inline-flex;
+  width: 100%;
+  height: 40px;
+
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-form-content {
+  margin-bottom: 20px;
+}
+
+.modal-form-message {
+  resize: none;
+  outline: none;
+
+  width: 100%;
+  height: 120px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.modal-form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-policy-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.castom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  outline: 2px solid var(--secondary-txt-cl);
+  outline-offset: -2px;
+}
+
+.modal-form-policy-input:checked + .castom-checkbox {
+  outline: transparent;
+  background-color: var(--accent-cl);
+}
+
+.castom-checkbox-icon {
+  opacity: 0;
+  transition: opacity var(--duration) var(--timing-function);
+}
+
+.modal-form-policy-input:checked + .castom-checkbox .castom-checkbox-icon {
+  opacity: 1;
+}
+
+.modal-form-policy-deck {
+  color: var(--main-txt-cl);
+}
+
+.modal-form-policy-link {
+  color: var(--accent-cl);
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+}
+
 /* = /Modal Window = */
 /* ====== /Hero section ====== */
 
