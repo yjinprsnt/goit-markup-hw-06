@@ -19,6 +19,7 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   --gap-between-cards: 30px;
+  --btn-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
@@ -272,6 +273,7 @@ img {
 
   color: var(--main-bg-cl);
   background-color: var(--accent-cl);
+  box-shadow: var(--btn-box-shadow);
 
   transition: background-color var(--duration) var(--timing-function);
 }
@@ -676,28 +678,44 @@ img {
   display: inline-flex;
 }
 
+.foot-mail-field {
+  margin-right: 12px;
+}
+
 .foot-mail-input {
   display: inline-flex;
-  margin-right: 10px;
+  padding-top: 15px;
   padding-left: 16px;
+  padding-bottom: 15px;
 
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--main-bg-cl);
+  color: rgba(255, 255, 255, 0.6);
 
   width: 358px;
   height: 50px;
+  outline: none;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  transition: box-shadow var(--duration) var(--timing-function);
+}
+
+.foot-mail-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.foot-mail-input:hover,
+.foot-mail-input:focus {
+  box-shadow: var(--btn-box-shadow);
 }
 
 .foot-form-btn {
   display: inline-flex;
   align-items: center;
+
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
@@ -714,12 +732,14 @@ img {
   color: var(--main-bg-cl);
   background-color: var(--accent-cl);
 
-  transition: background-color var(--duration) var(--timing-function);
+  transition: background-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
 }
 
 .foot-form-btn:hover,
 .foot-form-btn:focus {
   background-color: #188ce8;
+  box-shadow: var(--btn-box-shadow);
 }
 
 .foot-form-btn::after {
@@ -727,18 +747,13 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  outline: 2px solid tomato;
+  background-image: url(../images/icon-send.svg);
+  background-size: contain;
 }
 
 /* /foot form content */
-
-/* ====== /Footer ====== */
-
-/* =============== Portfolio =============== */
-
-/* ====== Work section ====== */
-
-/* = Project filter = */
+/* ====== /Footer ====== */ /* =============== Portfolio =============== */
+/* ====== Work section ====== */ /* = Project filter = */
 .work-list {
   display: flex;
   align-items: center;
