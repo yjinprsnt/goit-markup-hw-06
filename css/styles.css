@@ -387,6 +387,31 @@ img {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  transition: border-color var(--duration) var(--timing-function);
+}
+
+.modal-form-input:hover,
+.modal-form-input:focus,
+.modal-form-input:checked,
+.modal-form-message:hover,
+.modal-form-message:focus,
+.modal-form-message:checked {
+  border-color: var(--accent-cl);
+}
+
+.modal-form-group:hover .modal-form-icon,
+.modal-form-group:focus .modal-form-icon,
+.modal-form-group:checked .modal-form-icon {
+  fill: var(--accent-cl);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .modal-form-area-group {
@@ -412,6 +437,7 @@ img {
 
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color var(--duration) var(--timing-function);
 }
 
 .modal-form-message::placeholder {
