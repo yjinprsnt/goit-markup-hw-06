@@ -383,7 +383,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.modal-form-content > .modal-form-group {
+.modal-form-area-group {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -444,15 +445,47 @@ img {
   opacity: 1;
 }
 
-.modal-form-policy-deck {
-  color: var(--main-txt-cl);
+.modal-form-policy-group {
   margin-bottom: 30px;
+  display: flex;
+  color: var(--main-txt-cl);
 }
 
 .modal-form-policy-link {
   color: var(--accent-cl);
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
+}
+
+.modal-feedback-btn {
+  display: inline-flex;
+  align-items: center;
+
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-right: 52px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  color: var(--main-bg-cl);
+  background-color: var(--accent-cl);
+
+  transition: background-color var(--duration) var(--timing-function),
+    box-shadow var(--duration) var(--timing-function);
+}
+
+.modal-feedback-btn:hover,
+.modal-feedback-btn:focus {
+  background-color: #188ce8;
+  box-shadow: var(--btn-box-shadow);
 }
 
 /* = /Modal Window = */
