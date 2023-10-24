@@ -345,6 +345,15 @@ img {
   border-radius: 50%;
 }
 
+.close-btn:hover .modal-icon,
+.close-btn:focus .modal-icon {
+  fill: var(--accent-cl);
+}
+
+.modal-icon {
+  transition: fill var(--duration) var(--timing-function);
+}
+
 .modal-title {
   display: block;
   font-size: 20px;
