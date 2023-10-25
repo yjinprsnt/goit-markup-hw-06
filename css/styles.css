@@ -471,11 +471,13 @@ img {
   border-radius: 2px;
   outline: 2px solid var(--secondary-txt-cl);
   outline-offset: -2px;
+  transition: outline-color var(--duration) var(--timing-function);
 }
 
+.modal-form-policy-input:hover + .castom-checkbox,
+.modal-form-policy-input:focus + .castom-checkbox,
 .modal-form-policy-input:checked + .castom-checkbox {
-  outline: transparent;
-  background-color: var(--accent-cl);
+  outline-color: var(--accent-cl);
 }
 
 .castom-checkbox-icon {
@@ -494,6 +496,7 @@ img {
 }
 
 .modal-form-policy-link {
+  outline-color: var(--accent-cl);
   color: var(--accent-cl);
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
@@ -517,6 +520,7 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
 
+  outline-color: var(--accent-cl);
   color: var(--main-bg-cl);
   background-color: var(--accent-cl);
 
