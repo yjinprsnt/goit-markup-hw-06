@@ -430,6 +430,7 @@ img {
 }
 
 .modal-form-message {
+  display: block;
   resize: none;
   outline: transparent;
 
@@ -867,13 +868,8 @@ img {
 /* /foot social content */
 
 /* foot form content */
-
 .foot-mail-form {
   display: inline-flex;
-}
-
-.foot-mail-field {
-  margin-right: 12px;
 }
 
 .foot-mail-input {
