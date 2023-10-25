@@ -409,18 +409,19 @@ img {
   border-color: var(--accent-cl);
 }
 
-.modal-form-group:hover .modal-form-icon,
-.modal-form-group:focus .modal-form-icon,
-.modal-form-group:checked .modal-form-icon {
-  fill: var(--accent-cl);
-}
-
 .modal-form-icon {
   position: absolute;
   top: 50%;
   left: 13px;
 
+  fill: var(--secondary-txt-cl);
   transition: fill var(--duration) var(--timing-function);
+}
+
+.modal-form-input:hover + .modal-form-icon,
+.modal-form-input:focus + .modal-form-icon,
+.modal-form-input:checked + .modal-form-icon {
+  fill: var(--accent-cl);
 }
 
 .modal-form-area-group {
