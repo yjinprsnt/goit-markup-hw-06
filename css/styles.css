@@ -770,7 +770,7 @@ img {
 }
 
 .foot-address-content:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 94px;
 }
 
 .logo-foot {
@@ -877,6 +877,7 @@ img {
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
+  margin-right: 12px;
 
   font-size: 16px;
   line-height: 1.25;
