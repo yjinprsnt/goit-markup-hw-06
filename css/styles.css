@@ -340,9 +340,17 @@ img {
   width: 30px;
   height: 30px;
 
+  outline-color: transparent;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition: outline-color var(--duration) var(--timing-function);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  outline-color: var(--accent-cl);
 }
 
 .close-btn:hover .modal-icon,
