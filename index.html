@@ -72,17 +72,21 @@
           <button class="feedback-btn btn" type="button" data-modal-open>
             Замовити послугу
           </button>
+          <!-- Бекдроп -->
           <div class="backdrop is-hidden" data-modal>
+            <!-- Модальне вікно -->
             <div class="modal">
               <button class="close-btn btn" type="button" data-modal-close>
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/sprite.svg#close-btn"></use>
                 </svg>
               </button>
+              <!-- Опис модального вікна -->
               <strong class="modal-title">
                 Залиште свої дані, ми вам передзвонимо
               </strong>
               <form class="modal-form" name="modal-order-form">
+                <!-- данні користувача -->
                 <label class="modal-form-group">
                   <span class="modal-form-label">Ім'я</span>
                   <input
@@ -122,6 +126,7 @@
                   </svg>
                 </label>
 
+                <!-- Коментар -->
                 <label class="modal-form-area-group">
                   <span class="modal-form-label">Коментар</span>
                   <textarea
@@ -132,6 +137,7 @@
                   ></textarea>
                 </label>
 
+                <!-- Політика конфіденційності -->
                 <label class="modal-form-policy-group">
                   <input
                     class="modal-form-policy-input visually-hidden"
